@@ -1,0 +1,168 @@
+.container, .container * {
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    z-index: 5;
+    margin: auto;
+    width: 100%;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img{
+    width: 100%;
+    max-height: 650px;
+}
+
+.stanga, .dreapta {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+@media (hover: hover) {
+    .stanga:hover, .dreapta:hover {
+        background-color: #28827c;
+        opacity: 0.9;
+    }
+}
+
+.dreapta {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+#bright{
+    filter: brightness(200%);
+}
+
+@keyframes fade {
+    from {opacity: .75}
+    to {opacity: 1}
+}
+
+@media only screen and (max-width: 420px) {
+    .stranga, .dreapta,.text {font-size: 12px !important;}
+    .stanga, .dreapta{
+        padding: 10px;
+    }
+    .text{
+        padding: 2px 12px !important;
+    }
+    .descriere{
+        width: 100% !important;
+        padding: 0 5% !important;
+    }
+    #tr{
+        display: none;
+    }
+    #tl{
+        width: 100%;
+        padding: 60px 5% 60px !important;
+    }
+    #b{
+        width: 100%;
+        padding: 0 5% !important;
+    }
+    #inv{
+        display: table !important;
+    }
+    #invd{
+        width: 100%;
+        padding: 0 5% 60px !important;
+    }
+}
+
+.descriere{
+    box-sizing: border-box;
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px auto auto;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    color: #666666;
+}
+
+.descriere h2{
+    font-family: Teko, sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    margin-top: 0;
+    color: black;
+}
+
+.descriere p{
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: 17px;
+    margin-bottom: 0;
+    color: #28827c;
+}
+
+table.prez{
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.prez td{
+    width: 35%;
+    font-family: "Open Sans", sans-serif;
+    color: #666666;
+}
+
+.prez h2{
+    font-family: Teko, sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    margin-top: 0;
+    color: black;
+    line-height: 30px;
+}
+
+#tr, #tl{
+    padding: 90px 8% 105px;
+    vertical-align: top;
+}
+
+#b{
+    padding: 0 27.5%;
+}
+
+    #inv{display: none}

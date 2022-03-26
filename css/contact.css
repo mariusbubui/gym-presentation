@@ -1,0 +1,119 @@
+body{
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    font-family: Teko, sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+#googleMap{
+    width: 52.5%;
+    height: 70%;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    display: inline-block;
+    position: absolute;
+}
+
+div.tabel{
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    bottom: 115px;
+}
+
+table.tc{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+td.top{
+    height: 30px;
+}
+
+td.left{
+    padding-left: 35px;
+    vertical-align: top;
+    width: 40%;
+}
+
+.tc td:not(.left){
+    padding-right: 35px;
+    vertical-align: top;
+    width: 50%;
+}
+
+textarea{
+    background-color: rgb(28, 34, 37);
+    font-family: Teko, sans-serif;
+    font-weight: 600;
+    font-size: 27px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    resize: vertical;
+    color: white;
+    padding: 7px 10px 10px 15px;
+    width: 75%;
+    height: 70%;
+}
+
+::placeholder {
+    color: white;
+    opacity: 50%;
+}
+
+button.b{
+    background-color: rgb(28, 34, 37);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px 20px;
+    font-size: 17px;
+    font-weight: 700;
+    height: 30px;
+}
+
+@media only screen and (max-height: 500px) {
+    .tabel{
+        overflow-y: auto;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .tabel{
+        position: static !important;
+        height: 500px;
+    }
+    .contact{
+        margin-top: auto;
+        position: static !important;
+    }
+    table.tc{
+        position: static !important;
+    }
+    #googleMap{
+        height: 55% !important;
+        max-height: 350px;
+    }
+    .left{
+        padding-left: 2% !important;
+    }
+    .tc td:not(.left){
+        padding-right: 2% !important;
+    }
+    h2{
+        font-size: 28px !important;
+        line-height: 30px;
+    }
+}

@@ -1,0 +1,155 @@
+.content{
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d2ece6;
+}
+
+.frm{
+    box-sizing: border-box;
+    width: 500px;
+    height: 525px;
+    background-color: #01b1a6;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    padding: 10px 25px;
+    border-radius: 15px;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-family: Teko, sans-serif;
+    font-size: 45px;
+    text-align: center;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0 15px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: rgb(28, 34, 37);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-family: Teko, sans-serif;
+    font-size: 28px;
+    line-height: 28px;
+}
+
+h4{
+    text-align: center;
+}
+
+.frm a{
+    color: white;
+}
+
+#reg{
+    margin: 15px 0;
+}
+
+.welcome{
+    width: 800px;
+    height: 600px;
+    border-radius: 12px;
+    padding: 0;
+    color: white;
+}
+
+.welcome h1{
+    background-color: white;
+    margin: 0;
+    padding: 30px 0;
+    color: black;
+}
+
+#creg{
+    padding: 20px 55px;
+    overflow-y: auto;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 650px) {
+    .content{
+        top: 136px;
+        height: auto;
+    }
+    .frm{
+        width: 300px;
+        height: 425px;
+    }
+    h1{
+        margin: 10px !important;
+    }
+    #re{
+        padding: 15px 10px;
+        height: 500px;
+        font-size: 15px;
+    }
+    .welcome{
+        width: 80%;
+        height: 600px;
+        padding: 0 !important;
+    }
+    .welcome h1{
+        margin: 0 !important;
+        padding: 10px 0;
+        font-size: 30px;
+        line-height: 30px;
+    }
+    #creg {
+        padding: 10px 15px;
+        font-size: 18px;
+        height: 78%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    #creg {
+        height: 75%;
+    }
+}
+
+@media only screen and (max-height: 750px) {
+    .frm{
+        height: 85%;
+    }
+    h1{
+        font-size: 30px;
+        padding: 10px 0 !important;
+    }
+    h4{
+        margin: 0 10px;
+    }
+    #creg {
+        height: 75%;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    #re{
+        height: 425px;
+    }
+    h1{
+        margin: 5px !important;
+    }
+    #creg {
+        height: 67.5%;
+    }
+}

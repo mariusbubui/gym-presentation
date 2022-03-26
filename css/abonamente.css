@@ -1,0 +1,116 @@
+.row, .row *{box-sizing: border-box}
+
+.row{
+    position: absolute;
+    top: 60px;
+    bottom: 115px;
+    left:0;
+    right: 0;
+}
+
+.index, .content {
+    float: left;
+    padding: 10px 0;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.index{
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    height: 100%;
+    border-right: 2px solid white;
+    background-color: rgb(28, 34, 37);
+}
+
+.content{
+    position: absolute;
+    left: 260px;
+    right: 0;
+    height: 100%;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h2{
+    font-family: Teko, sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    margin-top: 0;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+@media screen and (max-width:650px) {
+    .index{
+        display: none;
+    }
+    .content{
+        left: 0 !important;
+        overflow: scroll;
+    }
+    .row{
+        top: 110px !important;
+        bottom: 175px !important;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .row{
+        bottom: 120px !important;
+    }
+}
+
+.index div{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    border-top: 1px solid white;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    color:white;
+}
+
+div.bottom{
+    padding-top: 10%;
+}
+
+div.top{
+    padding-top: 50px;
+}
+
+div.top, div.bottom{
+    display:flex;
+    justify-content: space-around;
+    vertical-align: center;
+}
+
+.top div, .bottom div{
+    width: 40%;
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding: 0 8px;
+}
+
+#m4{
+    border-bottom: 1px solid white;
+}
+
+h3{
+    font-family: Teko, sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin: 17px 0;
+}

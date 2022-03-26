@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Gym</title>
+
+  <link rel="icon" href="poze/logo.png">
+  <link rel="stylesheet" type="text/css" href="css/nav.css">
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+  <link rel="stylesheet" type="text/css" href="css/contact.css">
+
+  <link href='https://fonts.googleapis.com/css?family=Teko' rel='stylesheet'>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBz81OFUGSa0zcKLGqZUSzIH_y5dI2lYA&callback=myMap" async></script>
+  <script src="js/contact.js"></script>
+</head>
+<body>
+<div class="navbar">
+  <a href="index.html" class="left_i"><img src="poze/logo.png" class="logo" alt=""></a>
+  <div class="d">
+    <a href="welcome.php" class="drp">Contul meu</a>
+    <!--<div class="dropdown">
+      <a href="login.php">Conectare</a>
+      <a href="#">Înregistrare</a>
+    </div>-->
+  </div>
+  <a href="javascript:void(0)" class="active">Contact</a>
+  <a href="abonamente.html">Abonamente</a>
+  <a href="index.html">Prezentare</a>
+</div>
+
+<div class="tabel">
+  <table class="tc">
+  <form action="mailto:contact@fgym.ro" method="post">
+    <tr><td class="left top"><h2 class="content">Ofera un feedback</h2></td><td class="top"><h2 class="content">Unde ne gasesti?</h2></td></tr>
+    <tr><td class="left"><textarea name="mesaj" id="mesaj" placeholder="Mesaj..."></textarea><br><button type="submit" class="b" id="btn">Trimite</button></td><td><div id="googleMap"></div></td></tr>
+  </form>
+  </table>
+</div>
+
+<div class="footer contact">
+  <table>
+    <tr><td class="im"><img src="poze/location.png" alt=""></td><td>Str. Transilvaniei nr. 15</td><td class="im resp"><img src="poze/fb.png" alt="" ></td><td class="resp">
+      <a href="https://www.facebook.com">Facebook Gym Fitness</a></td><td rowspan="0" id="r0"><img src="poze/logo.png" id="bottom_logo" alt=""></td></tr>
+    <tr><td class="im"><img src="poze/clock.png" alt=""></td><td>Luni - Duminica 08:00 - 22:00</td>
+      <td class="im resp"><img src="poze/ig.png" alt=""></td><td class="resp">
+        <a href="https://www.instagram.com">Instagram Gym Fitness</a></td></tr>
+    <tr><td class="im"><img src="poze/phone.png" alt=""></td><td>0753593512 / 0770122945</td><td class="im resp"><img src="poze/mail.png" alt=""><td class="resp">
+      <a href="mailto:contact@fgym.ro" id="marg">contact@fgym.ro</a></td></tr>
+  </table>
+</div>
+</body>
+</html>
